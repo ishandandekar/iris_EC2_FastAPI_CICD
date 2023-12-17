@@ -5,3 +5,4 @@ uvicorn
 fastapi
 pydantic
 flask
+mangum
