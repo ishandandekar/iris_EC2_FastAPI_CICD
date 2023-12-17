@@ -23,5 +23,6 @@ async def root():
 
 
 @app.get("/pred")
-def pred():
-    return {"msg": "hello"}
+def pred(data: Iris):
+    data = data.model_dump()
+    return {"msg": "hello", "data": data}
